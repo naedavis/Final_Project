@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Here</title>
+    <link rel="stylesheet" href="./styles/register.css" />
+    <!-- <script src="./scripts/script.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <div id="login" class="landing-section">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/ascen.d-logo.png" alt="" />
+          </div>
+          <ul class="navbar-links">
+            <li class="navbar-link">
+              <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
+                >Home</a
+              >
+            </li>
+            <li class="navbar-link">
+              <a
+                onclick="closeNavbar()"
+                href="#card-machine"
+                class="navbar-anchor"
+                >About Us</a
+              >
+            </li>
+            <li class="navbar-link">
+              <a
+                onclick="closeNavbar()"
+                href="#online-payment"
+                class="navbar-anchor"
+                >Why Online?</a
+              >
+            </li>
+            <li class="navbar-link">
+              <a
+                onclick="closeNavbar()"
+                href="#business-tools"
+                class="navbar-anchor"
+                >Policies</a
+              >
+            </li>
+            <li class="navbar-link">
+              <a onclick="closeNavbar()" href="#contact" class="navbar-anchor"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div class="navbar-menu" onclick="toggleNavbar()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+        <div class="wrapper">
+          <div class="register-overlay">
+            <div class="register-detail">
+              <div class="register-detail-image">
+                <img src="./images/image0 (1).jpeg" alt="" />
+              </div>
+              <div class="register-detail-container">
+              <div class="register-detail-content">
+                <h2>Register Here</h2>
+                <div class="register-form-container">
+                  <form id="register-form" class="registration-form">
+                    <input
+                      id="first_name"
+                      placeholder="name"
+                      name="first_name"
+                      type="text"
+                    />
+                    <input
+                      id="last_name"
+                      placeholder="surname"
+                      name="last_name"
+                      type="text"
+                    />
+                    <input
+                      id="username"
+                      placeholder="username"
+                      name="username"
+                      type="text"
+                    />
+                    <input
+                      id="password"
+                      placeholder="password"
+                      name="password"
+                      type="password"
+                    />
+                    <input
+                      id="email"
+                      placeholder="email@email.com"
+                      name="email"
+                      type="email"
+                    />
+                    <button class="register-btn" type="submit">Register</button>
+                    <!-- <button class="login-btn" type="button">Login</button> -->
+                  </form>
+                </div>
+              </div> <!--register-detail-content-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper"></div>
+      </div>
+      <!--login-section-->
+    </div>
+    <!--container -->
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
