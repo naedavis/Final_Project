@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="./styles/shop.css" />
-    <script src="./scripts/products.js"></script>
+    <script src="./scripts/product.js"></script>
   </head>
   <body>
     <div class="container">
@@ -45,9 +45,7 @@
               >
             </li>
             <li class="navbar-link">
-              <a href="cart.html" class="navbar-anchor"
-                >Cart</a
-              >
+              <a href="cart.html" class="navbar-anchor">Cart</a>
             </li>
           </ul>
           <div class="navbar-menu" onclick="toggleNavbar()">
@@ -55,7 +53,11 @@
           </div>
         </nav>
       </div>
-      <div class="wrapper">
+      <div>
+        <h1>Books:</h1>
+        <div id="books-container" class="books-container"></div>
+      </div>
+      <!-- <div class="wrapper">
         <div class="shop-page-overlay">
           <div class="shop-page-detail">
             <video autoplay muted loop id="myVideo">
@@ -69,7 +71,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

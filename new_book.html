@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/new_book.css" />
+    <title>Add Book</title>
+  </head>
+  <body>
+    <div>
+      <h1>Add a new book:</h1>
+      <div>
+        <form id="new-book-form" class="new-book-form">
+          <input
+            id="book_title"
+            type="text"
+            placeholder="Title"
+            name="book_title"
+          />
+          <input id="author" type="text" placeholder="Author" name="author" />
+          <input
+            id="description"
+            type="text"
+            placeholder="Description"
+            name="description"
+          />
+          <input
+            id="category"
+            type="text"
+            placeholder="Category"
+            name="category"
+          />
+          <input id="price" type="text" placeholder="Price" name="price" />
+          <input
+            id="book_image"
+            type="file"
+            placeholder="Image"
+            name="book_image"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/new_book.js"></script>
+  </body>
+</html>

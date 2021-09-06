@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/new_book.css" />
+    <title>Edit Book</title>
+  </head>
+  <body>
+    <div>
+      <h1>Edit book:</h1>
+      <div>
+        <form id="edit-book-form" class="new-book-form">
+          <input
+            id="book_title"
+            type="text"
+            placeholder="Title"
+            name="book_title"
+          />
+          <input id="author" type="text" placeholder="Author" name="author" />
+          <input
+            id="description"
+            type="text"
+            placeholder="Description"
+            name="description"
+          />
+          <input
+            id="category"
+            type="text"
+            placeholder="Category"
+            name="category"
+          />
+          <input id="price" type="text" placeholder="Price" name="price" />
+          <input
+            id="book_image"
+            type="file"
+            placeholder="Image"
+            name="book_image"
+          />
+          <img id="book-image" src="" />
+          <button type="submit">Submit</button>
+          <button type="button">Cancel</button>
+          <!-- GO BACK TO ADMIN SCREEN -->
+          <!-- CLEAR LOCAL STORAGE FOR edit-book -->
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/edit_book.js"></script>
+  </body>
+</html>
