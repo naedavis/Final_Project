@@ -6,7 +6,7 @@
   }
   
   /* -----------------------NAV BAR ---------------------------- */
-  .navbar {
+  /* .navbar {
     position: fixed;
     background-color: #fffcf2;
     width: 100vw;
@@ -67,7 +67,7 @@
     width: 4vw;
     height: 54px;
     cursor: pointer;
-  }
+  } */
   
   /* -----------------------LANDING---------------------------- */
   .register-detail{
@@ -136,6 +136,7 @@
     font-size: 22px;
     font-family: "Poppins", sans-serif;
     border: 1px solid white;
+    text-transform: uppercase;
     border-radius: 4px;
     background-color: #c2c1c1;
     color: #403d39;
@@ -149,4 +150,27 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
+  }
+
+  .login-here{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .login-here p {
+    color: black;
+  }
+  
+  .login-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    /* text-decoration:none; */
+    color: #403d39;
+    background-color: fffcf2;
+  }
+  
+  .login-anchor {
+    text-decoration: none;
+    color: black;
   }

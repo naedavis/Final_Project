@@ -1,6 +1,6 @@
-function addToCart(product) {
+function addToCart(book) {
   const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-  cart.push(product);
+  cart.push(book);
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 // PRODUCTS FUNCTION
@@ -24,8 +24,8 @@ window.onload = function () {
           container.classList.add("books-item");
 
           // creating text elements
-          const title = document.createElement("p");
-          const description = document.createElement("p");
+          const title = document.createElement("h2");
+          const description = document.createElement("q");
           const price = document.createElement("p");
           const category = document.createElement("p");
           const image = document.createElement("img");
@@ -51,11 +51,12 @@ window.onload = function () {
           button.innerText = "Add To Cart";
 
           // appending the text to the book
+          container.append(image);
           container.append(title);
           container.append(description);
           container.append(category);
           container.append(price);
-          container.append(image);
+          
           container.append(button);
 
           // appending the product to the main container
