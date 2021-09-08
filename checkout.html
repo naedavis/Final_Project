@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/checkout.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/checkout.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <form id="checkout-form" action="">
+      <div class="container">
         <div class="container-header">
-            <div class="container-left">
-                <form id="checkout-form" action="">
-                    <div>
-                        <h3>Shipping Information</h3>
-                        <div>
-                            <input id="address_line_1" name="address_line_1" type="text" placeholder="address line 1">
-                            <input id="address_line_2" name="address_line_2" type="text" placeholder="address line 2">
-                            <input id="city" name="city" type="text" placeholder="City">
-                            <input id="region" name="region"type="text" placeholder="region/province">
-                            <input id="postal_code" name="postal_code" type="text" placeholder="postal code">
-                            <input id="country" type="text" name="country" placeholder="country">
-
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Credit Card Information</h3>
-                        <div>
-                            <input id="card_number" name="card_number" type="text" placeholder="card_number">
-                            <input id="card_holder" name="card_holder" type="text" placeholder="card_holder">
-                            <input id="cvv" name="cvv" type="text" placeholder="cvv">
-                            <input id="expiry_date" name="expiry_date" type="text" placeholder="expiry_date">
-                        </div>
-                    </div>
-                </form>
+          <div class="container-left">
+            <div>
+              <h3>Shipping Information</h3>
+              <div>
+                <input
+                  id="address_line_1"
+                  name="address_line_1"
+                  type="text"
+                  placeholder="address line 1"
+                />
+                <input
+                  id="address_line_2"
+                  name="address_line_2"
+                  type="text"
+                  placeholder="address line 2"
+                />
+                <input id="city" name="city" type="text" placeholder="City" />
+                <input
+                  id="region"
+                  name="region"
+                  type="text"
+                  placeholder="region/province"
+                />
+                <input
+                  id="postal_code"
+                  name="postal_code"
+                  type="text"
+                  placeholder="postal code"
+                />
+                <input
+                  id="country"
+                  type="text"
+                  name="country"
+                  placeholder="country"
+                />
+              </div>
             </div>
-            <div class="container-right">right</div>
+            <div>
+              <h3>Credit Card Information</h3>
+              <div>
+                <input
+                  id="card_number"
+                  name="card_number"
+                  type="text"
+                  placeholder="card_number"
+                />
+                <input
+                  id="card_holder"
+                  name="card_holder"
+                  type="text"
+                  placeholder="card_holder"
+                />
+                <input id="cvv" name="cvv" type="text" placeholder="cvv" />
+                <input
+                  id="expiry_date"
+                  name="expiry_date"
+                  type="text"
+                  placeholder="expiry_date"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container-right">right</div>
         </div>
         <div>
-            <button>Finish and Pay</button>
+          <button type="submit">Finish and Pay</button>
         </div>
-    </div>
-</body>
+      </div>
+    </form>
+    <script src="./scripts/checkout.js"></script>
+  </body>
 </html>
