@@ -16,8 +16,11 @@ document
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
 
     const bookIds = [];
+    let total = 0;
+
     for (let i = 0; i < cart.length; i++) {
       const book = cart[i];
+      total = total + Number(book.price.replace("R", ""));
       bookIds.push({ id: book.id });
     }
 
@@ -33,6 +36,7 @@ document
     formData.append("cvv", cvv);
     formData.append("expiry_date", expiry_date);
     formData.append("books", JSON.stringify(bookIds));
+    formData.append("total", total);
 
     fetch("http://127.0.0.1:5000/create_payment/", {
       method: "POST",

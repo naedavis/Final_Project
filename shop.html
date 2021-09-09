@@ -7,7 +7,6 @@
     <title>Shop</title>
     <link rel="stylesheet" href="./styles/shop.css" />
     <script src="./scripts/product.js"></script>
-    
   </head>
   <body>
     <div class="container">
@@ -23,10 +22,7 @@
               >
             </li>
             <li class="navbar-link">
-              <a
-                onclick="closeNavbar()"
-                href="#search"
-                class="navbar-anchor"
+              <a onclick="closeNavbar()" href="#search" class="navbar-anchor"
                 >Search</a
               >
             </li>
@@ -36,7 +32,9 @@
               >
             </li>
             <li class="navbar-link cart-link">
-              <a onclick="closeNavbar()" href="cart.html" class="navbar-anchor"><i class="fas fa-shopping-cart">Cart</i></a>
+              <a onclick="closeNavbar()" href="cart.html" class="navbar-anchor"
+                ><i class="fas fa-shopping-cart">Cart</i></a
+              >
             </li>
           </ul>
           <div class="navbar-menu" onclick="toggleNavbar()">
@@ -48,43 +46,56 @@
         <div class="shop-overlay">
           <div class="shop-detail">
             <div class="shop-detail-background-image">
-              <img src="./images/New folder/calming-wheat-field.jpg" alt="">
-
+              <img src="./images/New folder/calming-wheat-field.jpg" alt="" />
             </div>
 
             <div class="shop-detail-container">
               <div class="shop-detail-content">
-              <h2><strong>BooksOn.line</strong></h2>
-              <h3>
-                Shop our wide variety of <strong>New or Pre-loved</strong> Books
-              </h3>
-            </div>
-            <div class="shop-detail-description">
-              We strive to bring you the best in Quality &  Affordability 
-            </div>
+                <h2><strong>BooksOn.line</strong></h2>
+                <h3>
+                  Shop our wide variety of
+                  <strong>New or Pre-loved</strong> Books
+                </h3>
+              </div>
+              <div class="shop-detail-description">
+                We strive to bring you the best in Quality & Affordability
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="books-section">
         <h1>Books:</h1>
-        <div id="books-container" class="books-container"></div>
+        <div></div>
+        <div id="pagination-container" class="data-container"></div>
       </div>
-      
-        <div class="footer-section">
-          <h2>BooksOn.line</h2>
-          <p>Quality and Affordabiltiy, always</p>
-            <div class="social-icons">
-             <a href="" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-             <a href="" target="_blank"><i class="fab fa-codepen" aria-hidden="true"></i></a>
-             <a href="" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            </div>
+
+      <div class="footer-section">
+        <h2>BooksOn.line</h2>
+        <p>Quality and Affordabiltiy, always</p>
+        <div class="social-icons">
+          <a href="" target="_blank"
+            ><i class="fab fa-github" aria-hidden="true"></i
+          ></a>
+          <a href="" target="_blank"
+            ><i class="fab fa-codepen" aria-hidden="true"></i
+          ></a>
+          <a href="" target="_blank"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
         </div>
-      
-
+      </div>
     </div>
-    <script src="https://kit.fontawesome.com/2822e841b6.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/2822e841b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/pagination.js"></script>
   </body>
 </html>
