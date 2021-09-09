@@ -6,16 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="./styles/shop.css" />
-    <script src="./scripts/product.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/shop.js"></script>
   </head>
   <body>
+
     <div class="container">
+      <div class="container-landing">
+        <div>
+          <nav class="navbar">
+            <ul  class="navbar-links">
+              <li class="navbar-link"><a href="home.html">Home</a></li>
+              <li class="navbar-link"><a href="home.html">About</a></li>
+              <li class="navbar-link"><a href="home.html">Contact</a></li>
+              <li class="navbar-link"><a href="home.html">Search</a></li>
+              <li class="navbar-link"><a href="cart.html">Cart</a></li>
+              <li class="navbar-link"><a href="admin.html">Profile</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="container-landing-overlay"> -->
+          
+          <div class="container-landing-backgroud">
+            <div class="container-landing-background-image">
+              <img src="./images/New folder/book-shelf.jpg" alt="">
+            </div>
+            
+            <div class="container-landing-content">
+              <h1>SHOP</h1>
+            </div>
+          </div>
+        <!-- <div class="container-landing-backgroud">
+          <div class="container-landing-background-image">
+            <img src="./images/New folder/pexels-cottonbro-4554355.jpg" alt="">
+          </div>
+          <div class="container-landing-content">
+            <h1>SHOP</h1>
+          </div>
+        </div> -->
+      <!-- </div> -->
+      
+      </div>
+      <div class="container-books">
+        <div class="container-books-left">
+          <div class="container-books-left-headings">
+            <h2>CATEGORY</h2>
+            <hr class="hr-category">
+              <h3>Adventure</h3>
+              <hr>
+              <h3>Biographic</h3>
+              <hr>
+              <h3>Comedy</h3>
+              <hr>
+              <h3>Children</h3>
+              <hr>
+              <h3>Fiction</h3>
+              <hr>
+              <h3>Thriller</h3>
+              <hr>
+              <h3>Romance</h3>
+          </div>
+        </div>
+        <div class="vl"></div>
+
+        <div class="container-books-right">
+          <hr class="container-books-right-line">
+
+          <div class="container-books-right-search">
+            <div class="container-books-search" >
+              <form class="example">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <!-- <h2>Search:</h2> -->
+              <input type="text" placeholder="Search.." name="search"></div>
+              </form>
+              
+            <div>
+              <label for="sort-by">Sort By:</label>
+              <select name="sort-by" id="sort-by">
+                <option value="Bloemfontein">Bloemfontein</option>
+                <option value="Cape Town">Cape</option>
+                <option value="Durban">Durban</option>
+                <option value="East London">East</option>
+                <option value="Johannesburg">Johannesburg</option>
+                <option value="Gqeberha">Gqeberha</option>
+                <option value="Polokwane">Polokwane</option>
+                <option value="Pretoria">Pretoria</option>
+                <option value="Soweto">Soweto</option>
+                <option value="Kimberley">Kimberley</option>
+                <option value="Mbombela">Mbombela</option>
+                <option value="Knysna">Knysna</option>
+              </select>
+            </div>
+            
+            
+          </div>
+          <hr class="container-books-right-line">
+          <div class="container-books-right-books">
+            <div class="books-section">
+              <!-- <h1>Books:</h1> -->
+              <div></div>
+              <div id="pagination-container" class="data-container"></div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- <div class="container">
       <div class="landing-section">
-        <nav class="navbar">
+        <nav class="navbar"> -->
           <!-- <div class="logo">
             <img src="./images/ascen.d-logo.png" alt="" />
           </div> -->
-          <ul class="navbar-links">
+          <!-- <ul class="navbar-links">
             <li class="navbar-link">
               <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
                 >Home</a
@@ -86,7 +191,7 @@
           ></a>
         </div>
       </div>
-    </div>
+    </div> -->
     <script
       src="https://kit.fontawesome.com/2822e841b6.js"
       crossorigin="anonymous"
@@ -96,6 +201,6 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/pagination.js"></script>
+    <script src="./scripts/pagination.js"></script>
   </body>
 </html>
