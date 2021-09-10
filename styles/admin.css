@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
-
+  /* background-color: #E8E4D9; */
 }
 
 /* -----------------------NAV BAR ---------------------------- */
@@ -113,4 +113,10 @@
 .actions-col {
   display: flex;
   gap: 10px;
+}
+
+.books-table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

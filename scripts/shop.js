@@ -6,19 +6,34 @@ const addToCart = (book) => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-const showBooks = (category = "All") => {
+const showBooks = (category = "", city = "", search = "") => {
   const booksElement = $("#pagination-container");
 
   const filtered = [];
   for (let i = 0; i < allbooks.length; i++) {
     const aBook = allbooks[i];
 
-    if (category == "All") {
-      filtered.push(aBook);
-    } else if (
-      category != "All" &&
-      category.toLowerCase() == aBook.category.toLowerCase()
-    ) {
+    if (category != "") {
+      if (category == "All") {
+        filtered.push(aBook);
+      } else if (category.toLowerCase() == aBook.category.toLowerCase()) {
+        filtered.push(aBook);
+      }
+    }
+    if (city != "") {
+      if (city == "All") {
+        filtered.push(aBook);
+      } else if (city.toLowerCase() == aBook.city.toLowerCase()) {
+        filtered.push(aBook);
+      }
+    }
+    if (search != "") {
+      if (aBook.title.toLowerCase().includes(search.toLowerCase())) {
+        filtered.push(aBook);
+      }
+    }
+
+    if (category == "" && city == "" && search == "") {
       filtered.push(aBook);
     }
   }
@@ -89,4 +104,14 @@ window.onload = () => {
       });
     }
   });
+};
+
+const handleChangeSort = (event) => {
+  const selectedCity = event.target.value;
+  showBooks("", selectedCity, "");
+};
+
+const handleSearch = () => {
+  const search = document.getElementById("search-field").value;
+  showBooks("", "", search);
 };

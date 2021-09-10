@@ -52,21 +52,21 @@
           <div class="container-books-left-headings">
             <h2>CATEGORIES</h2>
             <hr class="hr-category">
-              <h3 onclick="showBooks('All')">All</h3>
+              <h3 onclick="showBooks('All', '', '')">All</h3>
               <hr>
-              <h3 onclick="showBooks('Adventure')">Adventure</h3>
+              <h3 onclick="showBooks('Adventure', '', '')">Adventure</h3>
               <hr>
-              <h3 onclick="showBooks('Biographic')">Biographic</h3>
+              <h3 onclick="showBooks('Biographic', '', '')">Biographic</h3>
               <hr>
-              <h3 onclick="showBooks('Comedy')">Comedy</h3>
+              <h3 onclick="showBooks('Comedy', '', '')">Comedy</h3>
               <hr>
-              <h3 onclick="showBooks('Children')">Children</h3>
+              <h3 onclick="showBooks('Children', '', '')">Children</h3>
               <hr>
-              <h3 onclick="showBooks('Fiction')">Fiction</h3>
+              <h3 onclick="showBooks('Fiction', '', '')">Fiction</h3>
               <hr>
-              <h3 onclick="showBooks('Thriller')">Thriller</h3>
+              <h3 onclick="showBooks('Thriller', '', '')">Thriller</h3>
               <hr>
-              <h3 onclick="showBooks('Romance')">Romance</h3>
+              <h3 onclick="showBooks('Romance', '', '')">Romance</h3>
           </div>
         </div>
         <div class="vl"></div>
@@ -79,12 +79,13 @@
               <form class="example">
               <button type="submit"><i class="fa fa-search"></i></button>
               <!-- <h2>Search:</h2> -->
-              <input type="text" placeholder="Search.." name="search"></div>
+              <input type="text" id="search-field" placeholder="Search.." name="search" onkeyup="handleSearch()"></div>
               </form>
               
             <div>
               <label for="sort-by">Sort By:</label>
-              <select name="sort-by" id="sort-by">
+              <select name="sort-by" id="sort-by" onchange="handleChangeSort(event)">
+                <option value="All">Select a city</option>
                 <option value="Bloemfontein">Bloemfontein</option>
                 <option value="Cape Town">Cape</option>
                 <option value="Durban">Durban</option>

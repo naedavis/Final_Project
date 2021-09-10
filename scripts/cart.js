@@ -46,7 +46,7 @@ window.onload = function () {
     image.src = "http://127.0.0.1:5000/view_image/" + product.filename;
     price.innerText = product.price;
 
-    total = total + Number(product.price.replace("R", ""));
+    total = total + Number(product.price.replace("R", "").trim());
 
     button.innerText = "X";
 
