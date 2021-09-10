@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
-    <link rel="stylesheet" href="./styles/shop.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./scripts/shop.js"></script>
-  </head>
-  <body>
 
-    <div class="container">
-      <div class="container-landing">
-        <div>
-          <nav class="navbar">
-            <ul  class="navbar-links">
-              <li class="navbar-link"><a href="home.html">Home</a></li>
-              <li class="navbar-link"><a href="home.html">About</a></li>
-              <li class="navbar-link"><a href="home.html">Contact</a></li>
-              <li class="navbar-link"><a href="home.html">Search</a></li>
-              <li class="navbar-link"><a href="cart.html">Cart</a></li>
-              <li class="navbar-link"><a href="admin.html">Profile</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- <div class="container-landing-overlay"> -->
-          
-          <div class="container-landing-backgroud">
-            <div class="container-landing-background-image">
-              <img src="./images/New folder/book-shelf.jpg" alt="">
-            </div>
-            
-            <div class="container-landing-content">
-              <h1>SHOP</h1>
-            </div>
-          </div>
-        <!-- <div class="container-landing-backgroud">
-          <div class="container-landing-background-image">
-            <img src="./images/New folder/pexels-cottonbro-4554355.jpg" alt="">
-          </div>
-          <div class="container-landing-content">
-            <h1>SHOP</h1>
-          </div>
-        </div> -->
-      <!-- </div> -->
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="./styles/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./scripts/shop.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="container-landing">
+      <div>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-link"><a href="shop.html">Shop</a></li>
+            <li class="navbar-link"><a href="#about">About</a></li>
+            <li class="navbar-link"><a href="#contact">Contact</a></li>
+            <li class="navbar-link"><a href="./admin.html">Admin</a></li>
+            <li class="navbar-link"><a href="./cart.html">Cart</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="container-books">
-        <div class="container-books-left">
-          <div class="container-books-left-headings">
-            <h2>CATEGORIES</h2>
-            <hr class="hr-category">
-              <h3 onclick="showBooks('All', '', '')">All</h3>
-              <hr>
-              <h3 onclick="showBooks('Adventure', '', '')">Adventure</h3>
-              <hr>
-              <h3 onclick="showBooks('Biographic', '', '')">Biographic</h3>
-              <hr>
-              <h3 onclick="showBooks('Comedy', '', '')">Comedy</h3>
-              <hr>
-              <h3 onclick="showBooks('Children', '', '')">Children</h3>
-              <hr>
-              <h3 onclick="showBooks('Fiction', '', '')">Fiction</h3>
-              <hr>
-              <h3 onclick="showBooks('Thriller', '', '')">Thriller</h3>
-              <hr>
-              <h3 onclick="showBooks('Romance', '', '')">Romance</h3>
-          </div>
+
+      <div class="container-landing-backgroud">
+        <div class="container-landing-background-image">
+          <img src="./images/New folder/book-shelf.jpg" alt="">
         </div>
-        <div class="vl"></div>
 
-        <div class="container-books-right">
-          <hr class="container-books-right-line">
+        <div class="container-landing-content">
+          <h1>SHOP</h1>
+        </div>
+      </div>
 
-          <div class="container-books-right-search">
-            <div class="container-books-search" >
-              <form class="example">
+    </div>
+    <div class="container-books">
+      <div class="container-books-left">
+        <div class="container-books-left-headings">
+          <h2>CATEGORIES</h2>
+          <hr class="hr-category">
+          <h3 onclick="showBooks('All', '', '')">All</h3>
+          <hr>
+          <h3 onclick="showBooks('Adventure', '', '')">Adventure</h3>
+          <hr>
+          <h3 onclick="showBooks('Biographic', '', '')">Biographic</h3>
+          <hr>
+          <h3 onclick="showBooks('Comedy', '', '')">Comedy</h3>
+          <hr>
+          <h3 onclick="showBooks('Children', '', '')">Children</h3>
+          <hr>
+          <h3 onclick="showBooks('Fiction', '', '')">Fiction</h3>
+          <hr>
+          <h3 onclick="showBooks('Thriller', '', '')">Thriller</h3>
+          <hr>
+          <h3 onclick="showBooks('Romance', '', '')">Romance</h3>
+        </div>
+      </div>
+      <div class="vl"></div>
+
+      <div class="container-books-right">
+        <hr class="container-books-right-line">
+
+        <div class="container-books-right-search">
+          <div class="container-books-search">
+            <form class="example">
               <button type="submit"><i class="fa fa-search"></i></button>
               <!-- <h2>Search:</h2> -->
-              <input type="text" id="search-field" placeholder="Search.." name="search" onkeyup="handleSearch()"></div>
-              </form>
-              
-            <div>
-              <label for="sort-by">Sort By:</label>
-              <select name="sort-by" id="sort-by" onchange="handleChangeSort(event)">
-                <option value="All">Select a city</option>
-                <option value="Bloemfontein">Bloemfontein</option>
-                <option value="Cape Town">Cape</option>
-                <option value="Durban">Durban</option>
-                <option value="East London">East</option>
-                <option value="Johannesburg">Johannesburg</option>
-                <option value="Gqeberha">Gqeberha</option>
-                <option value="Polokwane">Polokwane</option>
-                <option value="Pretoria">Pretoria</option>
-                <option value="Soweto">Soweto</option>
-                <option value="Kimberley">Kimberley</option>
-                <option value="Mbombela">Mbombela</option>
-                <option value="Knysna">Knysna</option>
-              </select>
-            </div>
-            
-            
+              <input type="text" id="search-field" placeholder="Search.." name="search" onkeyup="handleSearch()">
           </div>
-          <hr class="container-books-right-line">
-          <div class="container-books-right-books">
-            <div class="books-section">
-              <!-- <h1>Books:</h1> -->
-              <div></div>
-              <div id="pagination-container" class="data-container"></div>
-            </div>
+          </form>
 
+          <div>
+            <label for="sort-by">Sort By:</label>
+            <select name="sort-by" id="sort-by" onchange="handleChangeSort(event)">
+              <option value="All">Select a city</option>
+              <option value="Bloemfontein">Bloemfontein</option>
+              <option value="Cape Town">Cape</option>
+              <option value="Durban">Durban</option>
+              <option value="East London">East</option>
+              <option value="Johannesburg">Johannesburg</option>
+              <option value="Gqeberha">Gqeberha</option>
+              <option value="Polokwane">Polokwane</option>
+              <option value="Pretoria">Pretoria</option>
+              <option value="Soweto">Soweto</option>
+              <option value="Kimberley">Kimberley</option>
+              <option value="Mbombela">Mbombela</option>
+              <option value="Knysna">Knysna</option>
+            </select>
+          </div>
+
+
+        </div>
+        <hr class="container-books-right-line">
+        <div class="container-books-right-books">
+          <div class="books-section">
+            <div></div>
+            <div id="pagination-container" class="data-container"></div>
           </div>
         </div>
-
-
       </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/2822e841b6.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/pagination.js"></script>
-  </body>
+
+    <div class="section about-section">
+      <div class="wrapper">
+        <h2>About: </h2>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vel interdum mattis. Fusce
+            nulla augue, sagittis vulputate scelerisque id, elementum et dolor. Integer vitae fringilla lectus, sit amet
+            lacinia est. Etiam nibh justo, dignissim nec pellentesque in, commodo non turpis. Phasellus at volutpat
+            turpis. Curabitur pharetra diam ac mattis pretium. Mauris pretium felis sed augue feugiat commodo. Vivamus
+            vehicula urna eget finibus semper.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="wrapper">
+        <h2>Contact Us: </h2>
+        <div class="contact-form-wrapper">
+          <form>
+            <input required name="name" placeholder="Full Name" type="text" />
+            <input required name="name" placeholder="Email Address" type="email" />
+            <textarea name="message" placeholder="Write us a message"></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-footer-section">
+      <div class="footer">
+        <div class="wrapper">
+          <div class="footer-section">
+            <h2>Naeemah Davis</h2>
+            <p>Developer, Designer, Problem-Solver</p>
+            <div class="social-icons">
+              <a href="https://github.com/naedavis" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://codepen.io/naedavis" target="_blank"><i class="fab fa-codepen"></i></a>
+              <a href="https://www.linkedin.com/in/naeemahdavis-29/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/2822e841b6.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./scripts/pagination.js"></script>
+</body>
+
 </html>

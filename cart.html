@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,76 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <link rel="stylesheet" href="./styles/cart.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/cart.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="container-landing">
         <div>
-            <nav class="navbar">
-              <ul  class="navbar-links">
-                <li class="navbar-link"><a href="home.html">Home</a></li>
-                <li class="navbar-link"><a href="home.html">About</a></li>
-                <li class="navbar-link"><a href="home.html">Contact</a></li>
-                <li class="navbar-link"><a href="home.html">Search</a></li>
-                <li class="navbar-link"><a href="cart.html">Cart</a></li>
-                <li class="navbar-link"><a href="admin.html">Profile</a></li>
-              </ul>
-            </nav>
-          </div>
-        <div class="landing-section">
-            <div class="landing-section-background">
-                <div class="landing-section-background-image">
-                    <img src="./images/New folder/alina-a-kCg1KJ-6D98-unsplash.jpg" alt="">
-                </div>
-                <div class="landing-section-background-content">
-                    <h1>My Cart</h1>
-                </div>
-            </div>
-            
+          <nav class="navbar">
+            <ul class="navbar-links">
+              <li class="navbar-link"><a href="./shop.html">Shop</a></li>
+              <li class="navbar-link"><a href="./shop.html">About</a></li>
+              <li class="navbar-link"><a href="./shop.html">Contact</a></li>
+              <li class="navbar-link"><a href="./admin.html">Admin</a></li>
+              <li class="navbar-link"><a href="#">Cart</a></li>
+            </ul>
+          </nav>
         </div>
-        
+        <div class="landing-section">
+          <div class="landing-section-background">
+            <div class="landing-section-background-image">
+              <img
+                src="./images/New folder/alina-a-kCg1KJ-6D98-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="landing-section-background-content">
+              <h1>My Cart</h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container-content-section">
         <div class="container-page">
-            <h2>My Items</h2>
-            <div class="container-page-content">
-              <div></div>
-                <div class="container-page-form-container">
-                  <div id="products-container" class="products-container"></div>
-                  <div  class="total-checkout-container">
-                    <p id="checkout-total-text">Total: R</p>
-                    <a class="checkout-button" href="checkout.html"><button>Checkout</button></a>
-                  </div>
-                  
-                </div>
-                <div class="continue-clear-container">
-                  <a class="continue-button" href="shop.html"><button>Continue Shopping</button></a>
-                  <a class="clear-button" href=""><button>Clear</button></a>
-                </div>
+          <h2>My Items</h2>
+          <div class="container-page-content">
+            <div></div>
+            <div class="container-page-form-container">
+              <div id="products-container" class="products-container"></div>
+              <div class="total-checkout-container">
+                Total: R
+                <a class="checkout-button" href="checkout.html"
+                  ><button>Checkout</button></a
+                >
+              </div>
             </div>
-
+            <div class="continue-clear-container">
+              <a class="continue-button" href="shop.html"
+                ><button>Continue Shopping</button></a
+              >
+              <a class="clear-button" href=""><button>Clear</button></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container-footer-section">
         <div class="footer">
-            <div class="wrapper">
-              <div class="footer-section">
-                <h2>Naeemah Davis</h2>
-                <p>Developer, Designer, Problem-Solver </p>
-                  <div class="social-icons">
-                   <a href="https://github.com/naedavis" target="_blank"><i class="fab fa-github"></i></a>
-                   <a href="https://codepen.io/naedavis" target="_blank"><i class="fab fa-codepen"></i></a>
-                   <a href="https://www.linkedin.com/in/naeemahdavis-29/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  </div>
+          <div class="wrapper">
+            <div class="footer-section">
+              <h2>Naeemah Davis</h2>
+              <p>Developer, Designer, Problem-Solver</p>
+              <div class="social-icons">
+                <a href="https://github.com/naedavis" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://codepen.io/naedavis" target="_blank"
+                  ><i class="fab fa-codepen"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/naeemahdavis-29/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-    <script src="./scripts/cart.js"></script>
   </body>
 </html>
