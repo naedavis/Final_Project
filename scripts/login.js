@@ -1,6 +1,6 @@
 // LOGIN FUNCTION
 document
-  .getElementById("my-login-form")
+  .getElementById("my-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
     const username = document.getElementById("username").value;

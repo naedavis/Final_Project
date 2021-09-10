@@ -27,10 +27,11 @@ window.onload = function () {
     container.classList.add("products-item");
 
     // creating text elements
-    const title = document.createElement("p");
+    const title = document.createElement("h3");
     const description = document.createElement("p");
     const price = document.createElement("p");
     const category = document.createElement("p");
+    const image = document.createElement("img");
     const button = document.createElement("button");
 
     button.onclick = function () {
@@ -38,9 +39,11 @@ window.onload = function () {
     };
 
     // changing text of products
+    
     title.innerText = product.title;
-    description.innerText = product.description;
+    description.innerText = product.description.substring(0, 100) + "...";
     category.innerText = product.category;
+    image.src = "http://127.0.0.1:5000/view_image/" + product.filename;
     price.innerText = product.price;
 
     total = total + Number(product.price.replace("R", ""));
@@ -48,6 +51,7 @@ window.onload = function () {
     button.innerText = "Remove From Cart";
 
     // appending the text to the product
+    container.append(image);
     container.append(title);
     container.append(description);
     container.append(category);
