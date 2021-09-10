@@ -10,92 +10,174 @@
   </head>
   <body>
     <div class="container">
-      <div id="login" class="landing-section">
-        <!-- <nav class="navbar">
-          <div class="logo">
-            <img src="./images/ascen.d-logo.png" alt="" />
+      <div class="container-landing">
+        <div>
+            <nav class="navbar">
+              <ul  class="navbar-links">
+                <li class="navbar-link"><a href="home.html">Home</a></li>
+                <li class="navbar-link"><a href="home.html">About</a></li>
+                <li class="navbar-link"><a href="home.html">Contact</a></li>
+                <li class="navbar-link"><a href="home.html">Search</a></li>
+                <li class="navbar-link"><a href="cart.html">Cart</a></li>
+                <li class="navbar-link"><a href="admin.html">Profile</a></li>
+              </ul>
+            </nav>
           </div>
-          <ul class="navbar-links">
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
-                >Home</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a
-                onclick="closeNavbar()"
-                href="#card-machine"
-                class="navbar-anchor"
-                >About Us</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a
-                onclick="closeNavbar()"
-                href="#online-payment"
-                class="navbar-anchor"
-                >Why Online?</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a
-                onclick="closeNavbar()"
-                href="#business-tools"
-                class="navbar-anchor"
-                >Policies</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="#contact" class="navbar-anchor"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div class="navbar-menu" onclick="toggleNavbar()">
-            <i class="fas fa-bars"></i>
+        <div class="landing-section">
+            <div class="landing-section-background">
+                <div class="landing-section-background-image">
+                    <img src="./images/New folder/alina-a-kCg1KJ-6D98-unsplash.jpg" alt="">
+                </div>
+                <div class="landing-section-background-content">
+                    <h1>Welcome to our Family</h1>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="container-content-section">
+        <div class="container-page">
+            <h2>Register</h2>
+            <div class="container-page-content">
+                <div class="container-page-form-container">
+                  <form id="register-form" class="registration-form">
+                    <h3>First Name:</h3>
+                    <input
+                      id="first_name"
+                      placeholder="name"
+                      name="first_name"
+                      type="text"
+                    />
+                    <h3>Last name</h3>
+                    <input
+                      id="last_name"
+                      placeholder="surname"
+                      name="last_name"
+                      type="text"
+                    />
+                    <h3>Username:</h3>
+                    <input
+                      id="username"
+                      placeholder="username"
+                      name="username"
+                      type="text"
+                    />
+                    <h3>Password:</h3>
+                    <input
+                      id="password"
+                      placeholder="password"
+                      name="password"
+                      type="password"
+                    />
+                    <h3>E-mail:</h3>
+                    <input
+                      id="email"
+                      placeholder="email@email.com"
+                      name="email"
+                      type="email"
+                    />
+                    <h3>City:</h3>
+                    <input
+                      id="city"
+                      placeholder="Cape Town"
+                      name="city"
+                      type="select"
+                      
+                    />
+                    <button class="register-btn" type="submit">
+                      Register
+                    </button>
+                    <div class="login-here">
+                      <p>Already have an Account?  <strong><link class="login-link"><a  href="./login.html" class="login-anchor">Login</a></link></strong> </p> 
+
+                    </div> 
+                  
+                  </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-footer-section">
+        <div class="footer">
+            <div class="wrapper">
+              <div class="footer-section">
+                <h2>Naeemah Davis</h2>
+                <p>Developer, Designer, Problem-Solver </p>
+                  <div class="social-icons">
+                   <a href="https://github.com/naedavis" target="_blank"><i class="fab fa-github"></i></a>
+                   <a href="https://codepen.io/naedavis" target="_blank"><i class="fab fa-codepen"></i></a>
+                   <a href="https://www.linkedin.com/in/naeemahdavis-29/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+            </div>
           </div>
-        </nav> -->
-        <div class="wrapper">
-          <div class="register-overlay">
+    </div>
+      
+    </div>
+    <!--container -->
+
+    <script src="./scripts/register.js"></script>
+  </body>
+</html>
+
+
+ <!-- <div class="wrapper">
+          <div id="login" class="landing-section">
+       <div class="landing-background">
+         <div class="landing-image">
+           <img src="./images/New folder/alina-a-kCg1KJ-6D98-unsplash.jpg" alt="">
+         </div>
+       </div>
+       <div class="register-section"></div>
+
+      </div>
             <div class="register-detail">
               <div class="register-detail-image">
-                <img src="./images/New folder/IMG_1898.jpg" alt="" />
+                <img src="./images/New folder/alina-a-kCg1KJ-6D98-unsplash.jpg" alt="" />
               </div>
               <div class="register-detail-container">
                 <div class="register-detail-content">
                   <h2>Register Here</h2>
                   <div class="register-form-container">
                     <form id="register-form" class="registration-form">
+                      <h3>First Name:</h3>
                       <input
                         id="first_name"
                         placeholder="name"
                         name="first_name"
                         type="text"
                       />
+                      <h3>Last name</h3>
                       <input
                         id="last_name"
                         placeholder="surname"
                         name="last_name"
                         type="text"
                       />
+                      <h3>Username:</h3>
                       <input
                         id="username"
                         placeholder="username"
                         name="username"
                         type="text"
                       />
+                      <h3>Password:</h3>
                       <input
                         id="password"
                         placeholder="password"
                         name="password"
                         type="password"
                       />
+                      <h3>E-mail:</h3>
                       <input
                         id="email"
                         placeholder="email@email.com"
                         name="email"
                         type="email"
                       />
+                      <h3>City:</h3>
                       <input
                         id="city"
                         placeholder="Cape Town"
@@ -103,45 +185,20 @@
                         type="select"
                         
                       />
-                      <!-- <div class="city-select">
-                        <select>
-                          <option value="0">Select City:</option>
-                          <option value="1">Cape Town</option>
-                          <option value="2">Johannesburg</option>
-                          <option value="3">Durban</option>
-                          <option value="4">Pretoria</option>
-                          <option value="5">Gqeberha</option>
-                          <option value="6">Bloemfontein</option>
-                          <option value="7">East London</option>
-                          <option value="8">Pietermaritzburg</option>
-                          <option value="9">Polokwane</option>
-                          <option value="10">Soweto</option>
-                          <option value="11">Kimberley</option>
-                          <option value="12">Mbombela</option>
-                        </select>
-                      </div> -->
                       <button class="register-btn" type="submit">
                         Register
                       </button>
                       <div class="login-here">
                         <p>Already have an Account?  <strong><link class="login-link"><a  href="./login.html" class="login-anchor">Login</a></link></strong> </p> 
 
-                      </div>
+                      </div> -->
                       <!-- <button class="login-btn" type="button">Login</button> -->
-                    </form>
+                    <!-- </form>
                   </div>
-                </div>
+                </div> -->
                 <!--register-detail-content-->
-              </div>
+              <!-- </div>
             </div>
-          </div>
-        </div>
-        <div class="wrapper"></div>
-      </div>
-      <!--login-section-->
-    </div>
-    <!--container -->
-
-    <script src="./scripts/register.js"></script>
-  </body>
-</html>
+        
+        </div> -->
+        <!-- <div class="wrapper"></div> -->
