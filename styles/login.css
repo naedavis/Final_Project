@@ -107,11 +107,7 @@ body{
   border-radius: 10px;
 }
 .container-page-form-container{
-  padding: 15px;
-  padding-top: 60px;
-  
-  
-  
+  padding: 15px;  
 }
 .container-page-form-container form{
   display: flex;

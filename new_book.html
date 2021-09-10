@@ -9,16 +9,108 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <div class="container-landing">
+        <div>
+            <nav class="navbar">
+              <ul  class="navbar-links">
+                <li class="navbar-link"><a href="home.html">Home</a></li>
+                <li class="navbar-link"><a href="home.html">About</a></li>
+                <li class="navbar-link"><a href="home.html">Contact</a></li>
+                <li class="navbar-link"><a href="home.html">Search</a></li>
+                <li class="navbar-link"><a href="cart.html">Cart</a></li>
+                <li class="navbar-link"><a href="admin.html">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+        <div class="landing-section">
+            <div class="landing-section-background">
+                <div class="landing-section-background-image">
+                    <img src="./images/New folder/elena-kloppenburg-B6FOuNAYpYI-unsplash.jpg" alt="">
+                </div>
+                <div class="landing-section-background-content">
+                    <h1>Add New Book</h1>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="container-content-section">
+        <div class="container-page">
+            <h2>Add New Book</h2>
+            <div class="container-page-content">
+                <div class="container-page-form-container">
+                  <form id="new-book-form" class="new-book-form">
+                    <h3>Book Title</h3>
+                    <input
+                      id="book_title"
+                      type="text"
+                      placeholder="Title"
+                      name="book_title"
+                    />
+                    <h3>Author</h3>
+                    <input id="author" type="text" placeholder="Author" name="author" />
+                    <h3>Description</h3>
+                    <input
+                      id="description"
+                      type="text"
+                      placeholder="Description"
+                      name="description"
+                    />
+                    <h3>Category</h3>
+                    <input
+                      id="category"
+                      type="text"
+                      placeholder="Category"
+                      name="category"
+                    />
+                    <h3>Price</h3>
+                    <input id="price" type="text" placeholder="Price" name="price" />
+                      <h3>Image</h3>
+                    <input
+                      id="book_image"
+                      type="file"
+                      placeholder="Image"
+                      name="book_image"
+                    />
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-footer-section">
+        <div class="footer">
+            <div class="wrapper">
+              <div class="footer-section">
+                <h2>Naeemah Davis</h2>
+                <p>Developer, Designer, Problem-Solver </p>
+                  <div class="social-icons">
+                   <a href="https://github.com/naedavis" target="_blank"><i class="fab fa-github"></i></a>
+                   <a href="https://codepen.io/naedavis" target="_blank"><i class="fab fa-codepen"></i></a>
+                   <a href="https://www.linkedin.com/in/naeemahdavis-29/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    
+    <script src="./scripts/new_book.js"></script>
+  </body>
+</html>
+
+<!-- <div>
         <nav class="navbar">
-          <!-- <div class="logo">
+          <div class="logo">
             <img src="./images/ascen.d-logo.png" alt="" />
           </div> -->
-          <ul class="navbar-links">
+          <!-- <ul class="navbar-links">
             <li class="navbar-link">
               <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
-                >Home</a
-              >
+                >Home</a -->
+              <!-- >
             </li>
             <li class="navbar-link">
               <a
@@ -79,10 +171,5 @@
             />
             <button type="submit">Submit</button>
           </form>
-        </div>
-      </div>
-    </div>
-    
-    <script src="./scripts/new_book.js"></script>
-  </body>
-</html>
+        </div> -->
+      <!-- </div>  -->
