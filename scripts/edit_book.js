@@ -1,7 +1,5 @@
-// get book from localstorage and set the form
-window.onload = () => {
+const getBookData = () => {
   const book = JSON.parse(localStorage.getItem("edit-book") || "");
-  console.log("book", book);
 
   if (book.id) {
     fetch(`http://127.0.0.1:5000/view_book_by_id/${book.id}`)
@@ -63,3 +61,25 @@ document
         console.log("error", error);
       });
   });
+
+window.onload = () => {
+  const jwtToken = localStorage.getItem("jwt-token");
+
+  // first check if user is logged in
+  fetch("http://127.0.0.1:5000/protected/", {
+    headers: {
+      Authorization: "JWT " + jwtToken,
+    },
+  }).then((response) => {
+    // if not logged in (status code is >= 400) redirect them to the login screen
+    if (response.status >= 400) {
+      localStorage.setItem(
+        "snack-message",
+        "You need to be logged in to edit a book."
+      );
+      window.location.href = "login.html";
+    } else {
+      getBookData();
+    }
+  });
+};

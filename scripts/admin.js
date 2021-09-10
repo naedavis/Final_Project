@@ -86,3 +86,25 @@ window.onload = () => {
     }
   });
 };
+
+window.onload = () => {
+  const jwtToken = localStorage.getItem("jwt-token");
+
+  // first check if user is logged in
+  fetch("http://127.0.0.1:5000/protected/", {
+    headers: {
+      Authorization: "JWT " + jwtToken,
+    },
+  }).then((response) => {
+    // if not logged in (status code is >= 400) redirect them to the login screen
+    if (response.status >= 400) {
+      localStorage.setItem(
+        "snack-message",
+        "You need to be logged in to view admin page."
+      );
+      window.location.href = "login.html";
+    } else {
+      getBookData();
+    }
+  });
+};

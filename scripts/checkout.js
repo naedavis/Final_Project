@@ -2,6 +2,7 @@ document
   .getElementById("checkout-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
+
     const address_line_1 = document.getElementById("address_line_1").value;
     const address_line_2 = document.getElementById("address_line_2").value;
     const city = document.getElementById("city").value;
@@ -14,6 +15,7 @@ document
     const expiry_date = document.getElementById("expiry_date").value;
 
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const jwtToken = localStorage.getItem("jwt-token");
 
     const bookIds = [];
     let total = 0;
@@ -41,6 +43,9 @@ document
     fetch("http://127.0.0.1:5000/create_payment/", {
       method: "POST",
       body: formData,
+      headers: {
+        Authorization: "JWT " + jwtToken,
+      },
     })
       .then(function (response) {
         if (response.status < 400 && response.status >= 200) {

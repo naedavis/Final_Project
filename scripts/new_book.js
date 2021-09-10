@@ -1,5 +1,6 @@
 document.getElementById("new-book-form").addEventListener("submit", (event) => {
   event.preventDefault();
+  const jwtToken = localStorage.getItem("jwt-token");
 
   const files = document.getElementById("book_image").files;
   const book_title = document.getElementById("book_title").value;
@@ -7,8 +8,6 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
   const description = document.getElementById("description").value;
   const category = document.getElementById("category").value;
   const price = document.getElementById("price").value;
-
-  console.log("files", files);
 
   const formData = new FormData();
   formData.append("file", files[0]);
@@ -21,6 +20,9 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
   fetch("http://127.0.0.1:5000/add_books/", {
     method: "POST",
     body: formData,
+    headers: {
+      Authorization: "JWT " + jwtToken,
+    },
   })
     .then(function (response) {
       if (response.status < 400 && response.status >= 200) {
@@ -36,15 +38,19 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
 window.onload = () => {
   const jwtToken = localStorage.getItem("jwt-token");
 
-  console.log("jwtToken", jwtToken);
-
   // first check if user is logged in
   fetch("http://127.0.0.1:5000/protected/", {
     headers: {
-      Authorization: "jwt " + jwtToken,
+      Authorization: "JWT " + jwtToken,
     },
   }).then((response) => {
-    console.log("response", response);
-    // if not logged in (status code is 401) redirect them to the login screen
+    // if not logged in (status code is >= 400) redirect them to the login screen
+    if (response.status >= 400) {
+      localStorage.setItem(
+        "snack-message",
+        "You need to be logged in to add a new book."
+      );
+      window.location.href = "login.html";
+    }
   });
 };

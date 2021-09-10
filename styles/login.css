@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,7 +16,6 @@ body{
   width: 100vw;
   height: 50px;
   z-index: 10;
-  
 }
 .navbar-links {
   height: 100%;
@@ -53,25 +52,25 @@ body{
   color: black;
 }
 
-.landing-section{
+.landing-section {
   display: block;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
-.landing-section-background{
+.landing-section-background {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
-.landing-section-background-image{
+.landing-section-background-image {
   object-fit: fit;
   z-index: 0;
 }
-.landing-section-background-image img{
+.landing-section-background-image img {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 
-.landing-section-background-content{
+.landing-section-background-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,11 +79,11 @@ body{
   transform: translate(-0%, -700%);
   z-index: 100;
 }
-.landing-section-background-content h1{
+.landing-section-background-content h1 {
   font-size: 30px;
 }
 
-.container-page{
+.container-page {
   /* border: 1px solid #c8bfe7; */
   display: flex;
   flex-direction: column;
@@ -93,11 +92,11 @@ body{
   padding: 20px;
   margin-bottom: 20px;
 }
-.container-page h2{
+.container-page h2 {
   font-size: 40px;
   color: #9d88e9;
 }
-.container-page-content{
+.container-page-content {
   border: 2px solid #bfb2ee;
   height: 50vh;
   width: 20vw;
@@ -106,27 +105,26 @@ body{
   align-items: center;
   border-radius: 10px;
 }
-.container-page-form-container{
-  padding: 15px;  
+.container-page-form-container {
+  padding: 15px;
 }
-.container-page-form-container form{
+.container-page-form-container form {
   display: flex;
   flex-direction: column;
   align-items: left;
   gap: 10px;
 }
-.container-page-form-container form h3{
+.container-page-form-container form h3 {
   font-size: 25px;
-  color: #a090db ;
+  color: #a090db;
 }
-.container-page-form-container form input{
+.container-page-form-container form input {
   height: 30px;
   width: 250px;
   font-size: 20px;
   border: 1px solid #c8bfe7;
-  
 }
-.container-page-form-container form button{
+.container-page-form-container form button {
   height: 40px;
   margin: 20px;
   border: 3px solid #c8bfe7;
@@ -135,21 +133,21 @@ body{
   color: #9984e6;
   background-color: white;
 }
-.container-page-form-container form button:hover{
-background-color: #9984e6;
-color: white;
-cursor: pointer;
+.container-page-form-container form button:hover {
+  background-color: #9984e6;
+  color: white;
+  cursor: pointer;
 }
 
-.container-page-form-container form h2{
+.container-page-form-container form h2 {
   align-items: left;
 }
 
-.register-here{
+.register-here {
   font-size: 16px;
   color: #7452f0;
 }
-.register-here a{
+.register-here a {
   text-decoration: none;
   font-size: 22px;
 }
@@ -210,4 +208,3 @@ cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
-

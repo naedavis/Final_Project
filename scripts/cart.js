@@ -48,7 +48,7 @@ window.onload = function () {
 
     total = total + Number(product.price.replace("R", ""));
 
-    button.innerText = "Remove From Cart";
+    button.innerText = "X";
 
     // appending the text to the product
     container.append(image);
