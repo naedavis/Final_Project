@@ -7,12 +7,13 @@ body{
     margin-right: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-family: "Urbanist", sans-serif;
 }
 .container{
     display: grid;
     grid-template-rows: 1fr min-content;
     height: 900px;
-    border: 1px solid grey;
+    border: 1px solid #c8bfe7;
     
 }
 .container-header{
@@ -29,15 +30,16 @@ body{
 .container-left h2{
     font-size: 30px;
     align-items: center;
+    color: #c8bfe7;
     
 }
 .container-left-card{
-    border: 1px solid black;
+    border: 1px solid #c8bfe7;
     border-radius: 10px;
     width: 30vw;
 }
 .container-left-shipping{
-    border: 1px solid black;
+    border: 1px solid #c8bfe7;
     border-radius: 10px;
     width: 30vw;
 }
@@ -61,10 +63,11 @@ body{
 }
 .container-right{
     background-color: #c8bfe7;
+    color: white;
 
 }
 .container-right-content{
-    border: 1px solid black;
+    /* border: 1px solid #c8bfe7; */
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -72,7 +75,7 @@ body{
     padding: 30px
 }
 .container-right-items{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -88,7 +91,7 @@ body{
     flex-direction: column;
 }
 .container-right-subtotals{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
@@ -98,10 +101,10 @@ body{
     flex-direction: column;
 }
 .container-right-sub-totals{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .container-right-total{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

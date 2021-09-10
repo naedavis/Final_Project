@@ -5,7 +5,7 @@
   /* background-color: #E8E4D9; */
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 /* NAV BAR */
@@ -31,7 +31,6 @@ body {
   cursor: pointer;
 }
 .navbar-link a {
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-decoration: none;
   color: #c8bfe7;
@@ -155,7 +154,6 @@ body {
 }
 
 .footer-section {
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;

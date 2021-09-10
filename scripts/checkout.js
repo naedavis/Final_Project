@@ -26,6 +26,7 @@ document
       bookIds.push({ id: book.id });
     }
 
+    const clearCart = () => {localStorage.setItem("cart") || "[]"};
     const formData = new FormData();
     formData.append("address_line_1", address_line_1);
     formData.append("address_line_2", address_line_2);
@@ -47,14 +48,12 @@ document
         Authorization: "JWT " + jwtToken,
       },
     })
-      .then(function (response) {
-        if (response.status < 400 && response.status >= 200) {
-          // register was successfull
-          console.log("response", response);
-          // do redirect to login screen
-          // window.location.href = "./login.html";
-        }
-      })
+    .then(function (response) {
+      if (response.status >= 200 && response.status < 400) {
+        showToast();
+        clearCart();
+      }
+    })
       .catch(function (error) {
         console.log("error", error);
       });
