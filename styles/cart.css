@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 /* NAV BAR */
@@ -55,11 +55,11 @@ body{
 .landing-section{
   display: block;
   height: 70vh;
-  width: 100vw;
+  width: 100100%vw;
 }
 .landing-section-background{
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 .landing-section-background-image{
   object-fit: fit;
@@ -67,7 +67,7 @@ body{
 }
 .landing-section-background-image img{
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .landing-section-background-content{
@@ -80,7 +80,8 @@ body{
   z-index: 100;
 }
 .landing-section-background-content h1{
-  font-size: 30px;
+  font-size: 50px;
+  color: white;
 }
 
 .container-page{

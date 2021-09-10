@@ -1,3 +1,24 @@
+const clearFields = () => {
+  document.getElementById("book_image").value = "";
+  document.getElementById("book_title").value = "";
+  document.getElementById("author").value = "";
+  document.getElementById("description").value = "";
+  document.getElementById("category").value = "";
+  document.getElementById("price").value = "";
+};
+
+const showToast = () => {
+  Toastify({
+    text: "Book added successfully!",
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    // backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+  }).showToast();
+};
+
 document.getElementById("new-book-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const jwtToken = localStorage.getItem("jwt-token");
@@ -25,8 +46,9 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
     },
   })
     .then(function (response) {
-      if (response.status < 400 && response.status >= 200) {
-        console.log("response", response);
+      if (response.status >= 200 && response.status < 400) {
+        showToast();
+        clearFields();
       }
     })
     .catch(function (error) {

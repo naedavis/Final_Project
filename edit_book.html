@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/edit_book.css" />
     <title>Edit Book</title>
+    <!-- TOASTIFY -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -73,8 +79,7 @@
                       />
                       <img id="book-image" src="" />
                       <button type="submit">Submit</button>
-                      <button type="button">Cancel</button>
-                       
+                      <a href="./admin.html"><button type="button">Cancel</button></a>
                     </form>
                   </div>
               </div>
@@ -102,81 +107,16 @@
     
 
     <div>
-      
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="./scripts/edit_book.js"></script>
   </body>
 </html>
 
-<!--      <div>
-        <nav class="navbar">
-           <div class="logo">
-            <img src="./images/ascen.d-logo.png" alt="" />
-          </div> 
-          <ul class="navbar-links">
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
-                >Home</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a
-                onclick="closeNavbar()"
-                href="#search"
-                class="navbar-anchor"
-                >Search</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="#policy" class="navbar-anchor"
-                >Policy</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="#contact" class="navbar-anchor"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div class="navbar-menu" onclick="toggleNavbar()">
-            <i class="fas fa-bars"></i>
-          </div>
-        </nav>
-      </div>
-      </div> -->
-<!-- <h1>Edit book:</h1>
-      <div>
-        <form id="edit-book-form" class="new-book-form">
-          <input
-            id="book_title"
-            type="text"
-            placeholder="Title"
-            name="book_title"
-          />
-          <input id="author" type="text" placeholder="Author" name="author" />
-          <input
-            id="description"
-            type="text"
-            placeholder="Description"
-            name="description"
-          />
-          <input
-            id="category"
-            type="text"
-            placeholder="Category"
-            name="category"
-          />
-          <input id="price" type="text" placeholder="Price" name="price" />
-          <input
-            id="book_image"
-            type="file"
-            placeholder="Image"
-            name="book_image"
-          />
-          <img id="book-image" src="" />
-          <button type="submit">Submit</button>
-          <button type="button">Cancel</button>
-           GO BACK TO ADMIN SCREEN 
-           CLEAR LOCAL STORAGE FOR edit-book -->
-        <!-- </form>
-      </div>
-    </div> --> 

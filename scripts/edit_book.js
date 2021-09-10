@@ -1,3 +1,15 @@
+const showToast = () => {
+  Toastify({
+    text: "Book updated successfully!",
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    // backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+  }).showToast();
+};
+
 const getBookData = () => {
   const book = JSON.parse(localStorage.getItem("edit-book") || "");
 
@@ -9,7 +21,6 @@ const getBookData = () => {
         }
       })
       .then(({ data }) => {
-        console.log("data", data);
         // const files = document.getElementById("book_image").files;
         document.getElementById("book_title").value = data.title;
         document.getElementById("author").value = data.author;
@@ -52,8 +63,9 @@ document
       body: formData,
     })
       .then(function (response) {
-        if (response.status < 400 && response.status >= 200) {
-          console.log("response", response);
+        if (response.status >= 200 && response.status < 400) {
+          showToast();
+          getBookData();
         }
       })
       .catch(function (error) {

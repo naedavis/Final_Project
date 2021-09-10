@@ -93,6 +93,9 @@ hr {
   color: #7d5bf7;
   width: 90%;
 }
+.hr-category h3 {
+  cursor: pointer;
+}
 .vl {
   border-left: 6px solid #c8bfe7;
   height: 700px;
