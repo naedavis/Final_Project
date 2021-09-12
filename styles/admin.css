@@ -3,16 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
-  /* background-color: #E8E4D9; */
 }
 
-/* -----------------------NAV BAR ---------------------------- */
+/* navbar */
 .navbar {
   position: fixed;
-  background-color: #fffcf2;
+  background-color: white;
   width: 100vw;
   height: 50px;
   z-index: 10;
+  
 }
 .navbar-links {
   height: 100%;
@@ -20,18 +20,20 @@
   display: flex;
   list-style-type: none;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   text-transform: uppercase;
   gap: 90px;
   background-color: #fffcf2;
+  padding-right: 20px;
   cursor: pointer;
 }
 .navbar-link a {
   font-size: 20px;
   text-decoration: none;
-  color: #403d39;
+  color: #c8bfe7;
   background-color: fffcf2;
+  padding-right: 50px;
 }
 .navbar-link a:hover {
   background-color: #403d39;
@@ -44,10 +46,6 @@
   left: 0;
   position: fixed;
   color: black;
-}
-
-.navbar-menu {
-  display: none;
 }
 
 /* --------------------------------------------------------------------------- */
@@ -119,4 +117,42 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+
+.footer {
+  background-color: #9d88e9;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+}
+.footer-books-image{
+  object-fit: contain;
+}
+.footer-books-image img{
+  height: 50px;
+}
+.footer-books-image img:hover{
+  height: 60px;
+}
+.flag-div{
+  display: flex;
+  flex-direction: row;
+}
+.footer-flag-image{
+  object-fit: contain;
+}
+.footer-flag-image img{
+  height: 40px;
+  margin-top: -6px;
+}
+.flag-div p{
+  font-size: 20px;
+  margin-left: 10px;
 }

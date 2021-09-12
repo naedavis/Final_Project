@@ -235,27 +235,6 @@ form.example::after {
   position: relative;
   padding-bottom: 22px;
 }
-/* padding-left: 250px; */
-
-/* }
-.navbar-menu {
-  display: none;
-} */
-
-/* .logo {
-  display: block;
-  grid-template-columns: 1fr 1fr;
-  z-index: 500;
-  width: 7vw;
-  height: 3px;
-}
-.logo img {
-  font-size: 20px;
-  position: relative;
-  width: 4vw;
-  height: 54px;
-  cursor: pointer;
-} */
 /* ----------------PRODUCTS --------------- */
 
 .shop-detail {
@@ -327,15 +306,8 @@ h3 {
   color: #342122;
 }
 
-/* .shop-detail-image img {
-  /* padding-top: 20px; */
-/* position: absolute;
-  object-fit: fill;
-  height: 100%;
-  width: 100%;
-  
- }  */
-*/ .shop-overlay {
+
+.shop-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -364,8 +336,6 @@ h3 {
 }
 .shop-detail-image {
   display: flex;
-  /* height: 30vh;
-  width: 50vw; */
   border-radius: 5px;
   padding: 5px;
 }
@@ -418,7 +388,6 @@ h3 {
 }
 
 .books-item q {
-  /* display: none; */
   font-size: 17px;
   height: 70px;
 }
@@ -450,13 +419,7 @@ h3 {
   color: black;
   gap: 15px;
 }
-/* .wrapper{ */
-/* margin-left: 150px;
-  margin-right: 150px; */
-/* display: grid;
-  height: 100%;
-  padding: 50px;
-} */
+
 
 .data-container {
   padding: 20px;

@@ -139,7 +139,6 @@ body{
 }
 
 
-/* ---------- FOOTER ---------- */
 .footer {
   background-color: #9d88e9;
 }
@@ -152,53 +151,27 @@ body{
   padding: 20px;
   gap: 20px;
 }
-
-.footer-section p {
-  text-align: center;
-  width: 400px;
+.footer-books-image{
+  object-fit: contain;
 }
-
-.social-icons {
+.footer-books-image img{
+  height: 50px;
+}
+.footer-books-image img:hover{
+  height: 60px;
+}
+.flag-div{
   display: flex;
-  gap: 15px;
+  flex-direction: row;
 }
-
-.footer-section h2 {
-  font-size: 35px;
+.footer-flag-image{
+  object-fit: contain;
 }
-
-.social-icons i {
-  cursor: pointer;
-  font-size: 30px;
+.footer-flag-image img{
+  height: 40px;
+  margin-top: -6px;
 }
-
-.social-icons a {
-  color: white;
-}
-
-.social-icons a:visited {
-  color: white;
-}
-
-.social-icons a:link {
-  color: white;
-  cursor: pointer;
-}
-
-.social-icons a:active {
-  color: white;
-}
-
-.social-icons i:hover {
-  color: black;
-  transition: all 0.2s ease;
-}
-
-/*------------------------------------------------------------------------------------------------------------------*/
-.wrapper {
-  margin-left: 150px;
-  margin-right: 150px;
-  display: grid;
-  height: 100%;
-  /* padding: 50px; */
+.flag-div p{
+  font-size: 20px;
+  margin-left: 10px;
 }
