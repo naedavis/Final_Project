@@ -452,7 +452,9 @@ h3 {
 }
 
 .about-section {
-  background-color: #9d88e9;
+  background-color: #c8bfe7;
+  padding: 50px;
+  height: 30vh;
   color: white;
 }
 
@@ -481,7 +483,7 @@ h3 {
 }
 
 .contact-form-wrapper form button {
-  background-color: #008cba;
+  background-color: #9c85ec;
   border: none;
   color: white;
   padding: 7px 18px;
@@ -490,6 +492,10 @@ h3 {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+}
+.contact-form-wrapper form button:hover{
+  color: #9c85ec;
+  background-color: white;
 }
 
 .contact-form-wrapper form input {
