@@ -43,7 +43,7 @@ window.onload = function () {
     title.innerText = product.title;
     description.innerText = product.description.substring(0, 100) + "...";
     category.innerText = product.category;
-    image.src = "http://127.0.0.1:5000/view_image/" + product.filename;
+    image.src = "https://books-online-final.herokuapp.com/view_image/" + product.filename;
     price.innerText = product.price;
 
     total = total + Number(product.price.replace("R", "").trim());

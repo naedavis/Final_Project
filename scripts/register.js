@@ -19,7 +19,7 @@ document
     formData.append("email", email);
     formData.append("city", city);
 
-    fetch("http://127.0.0.1:5000/registration/", {
+    fetch("https://books-online-final.herokuapp.com/registration/", {
       method: "POST",
       body: formData,
     })

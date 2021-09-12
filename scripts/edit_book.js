@@ -14,7 +14,7 @@ const getBookData = () => {
   const book = JSON.parse(localStorage.getItem("edit-book") || "");
 
   if (book.id) {
-    fetch(`http://127.0.0.1:5000/view_book_by_id/${book.id}`)
+    fetch(`https://books-online-final.herokuapp.com/view_book_by_id/${book.id}`)
       .then((response) => {
         if (response.status >= 200 && response.status <= 399) {
           return response.json();
@@ -29,7 +29,7 @@ const getBookData = () => {
         document.getElementById("price").value = data.price;
 
         document.getElementById("book-image").src =
-          "http://127.0.0.1:5000/view_image/" + data.filename;
+          "https://books-online-final.herokuapp.com/view_image/" + data.filename;
       });
   }
 };
@@ -58,7 +58,7 @@ document
     formData.append("category", category);
     formData.append("price", price);
 
-    fetch(`http://127.0.0.1:5000/edit/${book.id}`, {
+    fetch(`https://books-online-final.herokuapp.com/edit/${book.id}`, {
       method: "PUT",
       body: formData,
     })
@@ -78,7 +78,7 @@ window.onload = () => {
   const jwtToken = localStorage.getItem("jwt-token");
 
   // first check if user is logged in
-  fetch("http://127.0.0.1:5000/protected/", {
+  fetch("https://books-online-final.herokuapp.com/protected/", {
     headers: {
       Authorization: "JWT " + jwtToken,
     },

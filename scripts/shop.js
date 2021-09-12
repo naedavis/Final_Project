@@ -72,7 +72,7 @@ const showBooks = (category = "", city = "", search = "") => {
         description.innerText = book.description.substring(0, 100) + "...";
         category.innerText = book.category;
         price.innerText = book.price;
-        image.src = "http://127.0.0.1:5000/view_image/" + book.filename;
+        image.src = "https://books-online-final.herokuapp.com/view_image/" + book.filename;
         button.innerText = "Add To Cart";
 
         // appending the text to the book
@@ -95,7 +95,7 @@ const showBooks = (category = "", city = "", search = "") => {
 // PRODUCTS FUNCTION
 // load products when page loads
 window.onload = () => {
-  fetch("http://127.0.0.1:5000/view_books/").then(function (booksResponse) {
+  fetch("https://books-online-final.herokuapp.com/view_books/").then(function (booksResponse) {
     if (booksResponse.status >= 200 && booksResponse.status < 400) {
       // get all products
       booksResponse.json().then((books) => {

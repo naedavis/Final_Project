@@ -19,7 +19,7 @@ document
     const jwtToken = localStorage.getItem("jwt-token");
 
     // first check if user is logged in
-    fetch("http://127.0.0.1:5000/protected/", {
+    fetch("https://books-online-final.herokuapp.com/protected/", {
       headers: {
         Authorization: "JWT " + jwtToken,
       },
@@ -63,7 +63,7 @@ document
         formData.append("books", JSON.stringify(bookIds));
         formData.append("total", total);
 
-        fetch("http://127.0.0.1:5000/create_payment/", {
+        fetch("https://books-online-final.herokuapp.com/create_payment/", {
           method: "POST",
           body: formData,
           headers: {
@@ -130,7 +130,7 @@ window.onload = function () {
 
     title.innerText = product.title;
     category.innerText = product.category;
-    image.src = "http://127.0.0.1:5000/view_image/" + product.filename;
+    image.src = "https://books-online-final.herokuapp.com/view_image/" + product.filename;
     price.innerText = product.price;
 
     total = total + Number(product.price.replace("R", ""));

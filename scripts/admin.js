@@ -2,7 +2,7 @@ window.onload = () => {
   const jwtToken = localStorage.getItem("jwt-token");
 
   // first check if user is logged in
-  fetch("http://127.0.0.1:5000/protected/", {
+  fetch("https://books-online-final.herokuapp.com/protected/", {
     headers: {
       Authorization: "JWT " + jwtToken,
     },
@@ -15,7 +15,7 @@ window.onload = () => {
       );
       window.location.href = "login.html";
     } else {
-      fetch(`http://127.0.0.1:5000/view_all_books_by_user/`, {
+      fetch(`https://books-online-final.herokuapp.com/view_all_books_by_user/`, {
         headers: {
           Authorization: "JWT " + jwtToken,
         },

@@ -4,7 +4,7 @@ document.getElementById("my-form").addEventListener("submit", function (event) {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  fetch("http://127.0.0.1:5000/auth", {
+  fetch("https://books-online-final.herokuapp.com/auth", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

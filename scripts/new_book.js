@@ -38,7 +38,7 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
   formData.append("category", category);
   formData.append("price", price);
 
-  fetch("http://127.0.0.1:5000/add_books/", {
+  fetch("https://books-online-final.herokuapp.com/add_books/", {
     method: "POST",
     body: formData,
     headers: {
@@ -61,7 +61,7 @@ window.onload = () => {
   const jwtToken = localStorage.getItem("jwt-token");
 
   // first check if user is logged in
-  fetch("http://127.0.0.1:5000/protected/", {
+  fetch("https://books-online-final.herokuapp.com/protected/", {
     headers: {
       Authorization: "JWT " + jwtToken,
     },
