@@ -7,6 +7,27 @@ function removeFromCart(index) {
   productsElement.removeChild(product);
 }
 
+function editBookById(book) {
+  localStorage.setItem("edit-book", JSON.stringify(book));
+  window.location.href = "edit_book.html";
+}
+
+function deleteBookById(book_id) {
+  const confirmation = confirm("Are you sure you want to delete this book?");
+
+  console.log("confirmation", confirmation);
+
+  if (confirmation) {
+    fetch(`http://127.0.0.1:5000/delete/${book_id}`).then((response) => {
+      console.log("response", response);
+      if (response.status < 399 && response.status >= 200) {
+        location.reload();
+      }
+    });
+  }
+}
+
+
 window.onload = function () {
   const cart = JSON.parse(localStorage.getItem("cart") || "[]");
   const productsElement = document.getElementById("products-container");
