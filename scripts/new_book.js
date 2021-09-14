@@ -21,7 +21,6 @@ const showToast = () => {
 
 document.getElementById("new-book-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  const jwtToken = localStorage.getItem("jwt-token");
 
   const files = document.getElementById("book_image").files;
   const book_title = document.getElementById("book_title").value;
@@ -42,7 +41,7 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
     method: "POST",
     body: formData,
     headers: {
-      Authorization: "JWT " + jwtToken,
+      Authorization: "JWT " + localStorage.getItem("jwt-token"),
     },
   })
     .then(function (response) {
@@ -58,12 +57,11 @@ document.getElementById("new-book-form").addEventListener("submit", (event) => {
 });
 
 window.onload = () => {
-  const jwtToken = localStorage.getItem("jwt-token");
 
   // first check if user is logged in
   fetch("https://books-online-final.herokuapp.com/protected/", {
     headers: {
-      Authorization: "JWT " + jwtToken,
+      Authorization: "JWT " + localStorage.getItem("jwt-token"),
     },
   }).then((response) => {
     // if not logged in (status code is >= 400) redirect them to the login screen

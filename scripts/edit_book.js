@@ -75,12 +75,11 @@ document
   });
 
 window.onload = () => {
-  const jwtToken = localStorage.getItem("jwt-token");
 
   // first check if user is logged in
   fetch("https://books-online-final.herokuapp.com/protected/", {
     headers: {
-      Authorization: "JWT " + jwtToken,
+      Authorization: "JWT " + localStorage.getItem("jwt-token"),
     },
   }).then((response) => {
     // if not logged in (status code is >= 400) redirect them to the login screen
